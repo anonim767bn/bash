@@ -1,0 +1,14 @@
+name: anal pentest
+on: [push]
+jobs:
+  tests:
+    name: "проверка maker.sh"
+    runs-on: ubuntu-latest
+    steps
+    - uses: actions/checkout@v2
+    - name: "test maker.sh"
+      run: |
+        bash test.sh
+    - name: "test maker22222 .sh"
+      run: |
+        echo "artyomy pidory"
